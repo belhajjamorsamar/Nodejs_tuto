@@ -1,0 +1,14 @@
+{
+  "name": "serveur",
+  "version": "1.0.0",
+  "description": "test serveur nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "\"samar_belhajj_amor\"",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
