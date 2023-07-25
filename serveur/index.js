@@ -11,12 +11,17 @@ router.get('/Home', (req, res) => {
 	res.send('welcome to the Home page ');
 });
 
-router.get('/:nom',(req,res)=>{
+// creation d'un routeur avec une paramettres
+router.get('/:nom', (req, res) => {
+	// remarque 1: donc eli ba3ed 2 point c'est paramettre et eli ba3ed el / c'est nom du routeur
+	res.send('je suis ' + `${req.params.nom}`); // remarque2:
+});
 
-    res.send(`${req.params.nom}`);
-})
-
-
+router.get('/:a/:b', (req, res) => {
+	res.send(
+		'addition : ' + `${parseInt(req.params.a) + parseInt(req.params.b)}`
+	);
+});
 app.use('/', router);
 
 app.listen(3000, () => console.log('Serveur en marche'));
