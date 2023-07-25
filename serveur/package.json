@@ -4,7 +4,8 @@
   "description": "test serveur nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "samar":"node index.js"
   },
   "author": "\"samar_belhajj_amor\"",
   "license": "ISC",
