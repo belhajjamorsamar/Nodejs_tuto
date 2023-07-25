@@ -1,7 +1,7 @@
 const express = require('express'); // impoter le module express
 const app = express(); // creer une instance d'express js
-
 const router = express.Router();
+const fs = require('fs');
 
 router.get('/Description', (req, res) => {
 	res.send('this page is a test for serveur express');
